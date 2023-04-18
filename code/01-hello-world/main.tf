@@ -1,6 +1,6 @@
 # Configure the Google Cloud provider
 provider "google" {
-  project = "terraform-examples-gcloud"
+  project = "tenable-se-sandbox"
   region  = "us-east1-b"
 }
 
@@ -12,7 +12,7 @@ resource "google_compute_instance" "example" {
   
   boot_disk {
     initialize_params {
-      image = "ubuntu-1604-lts"
+      image = "ubuntu-1804-lts"
     }
   }
   

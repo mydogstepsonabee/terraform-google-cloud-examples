@@ -1,0 +1,21 @@
+# Logs
+logs
+*.log
+
+# OS
+.DS_Store
+
+# Terraform
+.private
+.terraform
+*.tfstate
+*.tfstate.*
+*.lock.hcl
+*.tfvars
+.ssh
+*.pem
+*.json
+
+# Scan
+config_*
+accurics_*
