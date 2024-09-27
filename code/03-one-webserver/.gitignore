@@ -16,11 +16,11 @@ override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
-*terraform.lock.hcl*
+.terraform.lock.hcl
 
 # Include tfplan files to ignore the plan output of `terraform plan` command
 *.tfplan
-*.plan
+tf.plan
 
 # Ignore CLI configuration files
 .terraformrc
