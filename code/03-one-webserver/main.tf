@@ -1,6 +1,6 @@
 # Configure the Google Cloud provider
 provider "google" {
-  project = "terraform-examples-gcloud"
+  project = "defender-con"
   region  = "us-east1"
 }
 
@@ -25,7 +25,7 @@ resource "google_compute_instance" "example" {
   
   boot_disk {
     initialize_params {
-      image = "ubuntu-1604-lts"
+      image = "ubuntu-2004-lts"
     }
   }
   
@@ -44,5 +44,5 @@ resource "google_compute_instance" "example" {
 
 # Output variable: Public IP address
 output "public_ip" {
-  value = "${google_compute_instance.example.network_interface.0.access_config.0.assigned_nat_ip}"
+  value = "${google_compute_instance.example.network_interface.0.access_config.0.nat_ip}"
 }
